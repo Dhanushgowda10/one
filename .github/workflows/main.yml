@@ -1,0 +1,12 @@
+name: demo cloud
+
+on:
+  workflow_dispatch:
+jobs:
+  executing_cmd:
+    runs-on: ubuntu-latest
+    steps:
+    - name: cloning
+      uses: actions/checkout@v6
+    - name: listing
+      run: ls -a
